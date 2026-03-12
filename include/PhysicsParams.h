@@ -130,33 +130,33 @@ struct PhysicsParams {
     // Print current parameter values to stdout
     // -----------------------------------------------------------------------
     void print() const {
-        printf("\n========================================================\n");
-        printf("  phi electroproduction SDME generator — Physics Params \n");
-        printf("========================================================\n");
-        printf("  Beam energy   : %.2f GeV\n", beamEnergy);
-        printf("  Q² range      : [%.2f, %.2f] GeV²\n", Q2min, Q2max);
-        printf("  xB  range     : [%.3f, %.3f]\n", xBmin, xBmax);
-        printf("  nEvents       : %d\n", nEvents);
-        printf("--------------------------------------------------------\n");
-        printf("  LL  sector:\n");
-        printf("    A_L   = %8.3f   (σ_L amplitude)\n", A_L);
-        printf("    b_L   = %8.3f   (t-slope, GeV⁻²)\n", b_L);
-        printf("    n_L   = %8.3f   (xB power)\n", n_L);
-        printf("    Im_LL = %8.3f   (BSA sin(φ) from σ_LT')\n", Im_LL);
-        printf("--------------------------------------------------------\n");
-        printf("  TT  sector:\n");
-        printf("    A_T     = %8.3f   (σ_T amplitude)\n", A_T);
-        printf("    b_T     = %8.3f   (t-slope, GeV⁻²)\n", b_T);
-        printf("    Delta_b = %8.3f   (extra helicity-flip slope)\n", Delta_b);
-        printf("    n_T     = %8.3f   (xB power)\n", n_T);
-        printf("    Im_TT   = %8.3f   (BSA sin(φ) from TT)\n", Im_TT);
-        printf("--------------------------------------------------------\n");
-        printf("  LT  interference:\n");
-        printf("    A_LT  = %8.3f   (real part)\n", A_LT);
-        printf("    A_LTi = %8.3f   (imag part)\n", A_LTi);
-        printf("    b_LT  = %8.3f   (t-slope, GeV⁻²)\n", b_LT);
-        printf("    n_LT  = %8.3f   (xB power)\n", n_LT);
-        printf("========================================================\n\n");
+        fprintf(stderr, "\n========================================================\n");
+        fprintf(stderr, "  phi electroproduction SDME generator — Physics Params \n");
+        fprintf(stderr, "========================================================\n");
+        fprintf(stderr, "  Beam energy   : %.2f GeV\n", beamEnergy);
+        fprintf(stderr, "  Q² range      : [%.2f, %.2f] GeV²\n", Q2min, Q2max);
+        fprintf(stderr, "  xB  range     : [%.3f, %.3f]\n", xBmin, xBmax);
+        fprintf(stderr, "  nEvents       : %d\n", nEvents);
+        fprintf(stderr, "--------------------------------------------------------\n");
+        fprintf(stderr, "  LL  sector:\n");
+        fprintf(stderr, "    A_L   = %8.3f   (σ_L amplitude)\n", A_L);
+        fprintf(stderr, "    b_L   = %8.3f   (t-slope, GeV⁻²)\n", b_L);
+        fprintf(stderr, "    n_L   = %8.3f   (xB power)\n", n_L);
+        fprintf(stderr, "    Im_LL = %8.3f   (BSA sin(φ) from σ_LT')\n", Im_LL);
+        fprintf(stderr, "--------------------------------------------------------\n");
+        fprintf(stderr, "  TT  sector:\n");
+        fprintf(stderr, "    A_T     = %8.3f   (σ_T amplitude)\n", A_T);
+        fprintf(stderr, "    b_T     = %8.3f   (t-slope, GeV⁻²)\n", b_T);
+        fprintf(stderr, "    Delta_b = %8.3f   (extra helicity-flip slope)\n", Delta_b);
+        fprintf(stderr, "    n_T     = %8.3f   (xB power)\n", n_T);
+        fprintf(stderr, "    Im_TT   = %8.3f   (BSA sin(φ) from TT)\n", Im_TT);
+        fprintf(stderr, "--------------------------------------------------------\n");
+        fprintf(stderr, "  LT  interference:\n");
+        fprintf(stderr, "    A_LT  = %8.3f   (real part)\n", A_LT);
+        fprintf(stderr, "    A_LTi = %8.3f   (imag part)\n", A_LTi);
+        fprintf(stderr, "    b_LT  = %8.3f   (t-slope, GeV⁻²)\n", b_LT);
+        fprintf(stderr, "    n_LT  = %8.3f   (xB power)\n", n_LT);
+        fprintf(stderr, "========================================================\n\n");
     }
 
     // -----------------------------------------------------------------------

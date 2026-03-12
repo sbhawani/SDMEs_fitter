@@ -209,7 +209,7 @@ public:
     // Print generation efficiency
     // -------------------------------------------------------------------------
     void stats() const {
-        printf("\nGenerator: %d generated, %d accepted, efficiency = %.4f\n\n",
+        fprintf(stderr, "\nGenerator: %d generated, %d accepted, efficiency = %.4f\n\n",
                generated, accepted,
                (generated > 0) ? static_cast<double>(accepted) / generated : 0.0);
     }
